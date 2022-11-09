@@ -331,7 +331,7 @@ async def end(ctx, *args):
         await Game.channel_game_start.send("---------------------SCORE---------------------")            
         await Game.channel_game_start.send(score)
         await Game.channel_game_start.send("--------------------SCORE---------------------")    
-        await Game.channel_game_start.send(f"Merci d'avoir joué à Among Legend et à une prochaine ! <3\n\n {SEPARATOR}\n\nCrédits : Copyright from Solary\n\tBot developpeurs : RickyBeater, YouStones \n\tContributeur(se)s) : Swan, Shaiht, Lorenzo-P, Nysciciel, Joris, Atmix \n\n{SEPARATOR} \n\n")
+        await Game.channel_game_start.send(f"Merci d'avoir joué à Among Legend et à une prochaine ! Pour relancer une partie n'oubliez pas de faire {command_prefix}reset <3\n\n {SEPARATOR}\n\nCrédits : Copyright from Solary\n\tBot developpeurs : RickyBeater, YouStones \n\tContributeur(se)s) : Swan, Shaiht, Lorenzo-P, Nysciciel, Joris, Atmix \n\n{SEPARATOR} \n\n")
     else:
         await Game.salon_faille.guild.get_member(ctx.message.author.id).send(f"Le vote n'as pas encore été fait ! ")
 
